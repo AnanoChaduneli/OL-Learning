@@ -1,10 +1,4 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-using System.Diagnostics.Metrics;
-using System.Numerics;
-using System.Runtime.InteropServices;
-
-/* Lesson 4 Homework 1
+﻿/* Lesson 4 Homework 1
  *    შევქმნათ მეთოდი, რომელსაც გადავცემთ ორ სრულ რიცხვს. მეთოდმა უნდა დააბრუნოს ორი რიცხვის ჯამი. 
  * გამოვიყვანოთ ეს ჯამი შესვლის წერტილის მეთოდის მეშვეობით კონსოლში.
  * Lesson 4 Homework 2
@@ -18,6 +12,11 @@ using System.Runtime.InteropServices;
  * ხილი: apple, watermelon, melon, cherry, straweberry
  * */
 
+using System;
+using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.Metrics;
+using System.Numerics;
+using System.Runtime.InteropServices;
 class MyMain
 {
     static void Main(string[] args) // Entry Point
