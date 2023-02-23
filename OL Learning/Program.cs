@@ -17,16 +17,16 @@ using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.Metrics;
 using System.Numerics;
 using System.Runtime.InteropServices;
+
 class MyMain
 {
     static void Main(string[] args) // Entry Point
-    {   //Lesson 4 Homework 1
-        Console.WriteLine("\nLesson 4 Homework 1\n");
-        Console.Write("Sum -  ");
+    {  
+        //Lesson 4 Homework 1
         getParams(5, 10); // პარამეტრის გადაცემა; მეთოდის გამოძახება
 
         //Lesson 4 Homework 2
-        getMinMax(); // მეთოდის გამოძახება
+        getMinMaxValues(); // მეთოდის გამოძახება
 
         //Lesson 4 Homework 3
         getFruitName(); // მეთოდის გამოძახება
@@ -35,15 +35,17 @@ class MyMain
     /// <summary>
     /// Lesson 4 Homework 1
     /// </summary>
-    static void getParams(int x, int y) //Homework 1 - პარამეტრების მიღება
+    static void getParams(int x, int y) // პარამეტრების მიღება
     {
+        Console.WriteLine("\nLesson 4 Homework 1\n");
+        Console.Write("Sum -  ");
         Console.WriteLine(x + y);
     }
 
     /// <summary>
     /// Lesson 4 Homework 2
     /// </summary>
-    static void getMinMax()
+    static void getMinMaxValues()
     {
 
         Console.WriteLine("\n\nLesson 4 Homework 2\n");
