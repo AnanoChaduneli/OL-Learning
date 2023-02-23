@@ -50,29 +50,24 @@ class MyMain
 
         //Max Value
         if (number1 > number2 && number1 > number3 && number1 > number4)
-        {
-            Console.WriteLine("Max value is - " + number1);
+        {   Console.WriteLine("Max value is - " + number1);
               } else if (number2 > number3 && number2 > number4)
-          {
-            Console.WriteLine("Max value is - " + number2);
+          { Console.WriteLine("Max value is - " + number2);
               } else if (number3 > number4)
-          {
-            Console.WriteLine("Max value is - " + number3);
+          { Console.WriteLine("Max value is - " + number3);
               } else
-          {
-            Console.WriteLine("Max value is - " + number4);
+          { Console.WriteLine("Max value is - " + number4);
         }
        
         //Min Value
         if (number1 < number2 && number1 < number3 && number1 < number4)
-        {
-           Console.WriteLine("Min value is - " + number1);
+        {   Console.WriteLine("Min value is - " + number1);
              } else if (number2 < number3 && number2 < number4)
-          {Console.WriteLine("Min value is - " + number2);
+          { Console.WriteLine("Min value is - " + number2);
              } else if (number3 < number4)
-          {Console.WriteLine("Min value is - " + number3);
+          { Console.WriteLine("Min value is - " + number3);
              } else
-          {Console.WriteLine("Max value is - " + number4);
+          { Console.WriteLine("Max value is - " + number4);
         }
     }
 }
