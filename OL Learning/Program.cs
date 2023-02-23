@@ -24,7 +24,7 @@ class MyMain
         Console.Write("Sum -  ");
         getParams(5, 10); // პარამეტრის გადაცემა; მეთოდის გამოძახება
         //Lesson 4 Homework 2
-         // მეთოდის გამოძახება
+        getMinMax(); // მეთოდის გამოძახება
         
 
     }
@@ -48,6 +48,7 @@ class MyMain
         decimal number4 = decimal.Parse(Console.ReadLine());
         Console.WriteLine();
 
+        //Max Value
         if (number1 > number2 && number1 > number3 && number1 > number4)
         {
             Console.WriteLine("Max value is - " + number1);
@@ -64,7 +65,8 @@ class MyMain
         {
             Console.WriteLine("Max value is - " + number4);
         }
-
+       
+        //Min Value
         if (number1 < number2 && number1 < number3 && number1 < number4)
         {
             Console.WriteLine("Min value is - " + number1);
