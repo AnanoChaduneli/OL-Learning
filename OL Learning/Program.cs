@@ -10,7 +10,7 @@
  * ამ ხილის დასახელების მიღების შემდეგ switch ოპერატორის მეშვეობით ნახოს თუ რომელი ხილია და გამოიყვანოს შესაბამისი შეტყობინება. 
  * თუ ასეთი ხილი არ მოიძებნა, ამის შესახებაც მომხმარებელმა უნდა მიიღოს შეტყობინება. 
  * ხილი: apple, watermelon, melon, cherry, straweberry
- * */
+ */
 
 using System;
 using System.ComponentModel.DataAnnotations;
