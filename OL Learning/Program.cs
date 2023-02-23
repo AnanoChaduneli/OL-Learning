@@ -8,13 +8,15 @@ class MyMain
 {      
     static void Main(string[] args) // Entry Point
     {
-        getParams(5, 10, "Sum is - ");
+        Console.WriteLine("\nLesson 4 Homework 1\n");
+        Console.Write("Sum -  ");
+        getParams(5, 10); // პარამეტრის გადაცემა; მეთოდის გამოძახება
+       
     }
 
-    static void getParams(int x, int y, string name)
+    static void getParams(int x, int y) //პარამეტრების მიღება
     {
-        Console.WriteLine("\nLesson 4 Homework 1\n");
-        Console.WriteLine(name +( x + y));
+        Console.WriteLine(x + y);
     }
 
 }
