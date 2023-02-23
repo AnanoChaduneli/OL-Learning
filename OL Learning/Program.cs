@@ -29,14 +29,20 @@ class MyMain
 
     }
 
+    /// <summary>
+    /// Lesson 4 Homework 1
+    /// </summary>
     static void getParams(int x, int y) //Homework 1 - პარამეტრების მიღება
     {
         Console.WriteLine(x + y);
     }
-
+    
+    /// <summary>
+    /// Lesson 4 Homework 2
+    /// </summary>
     static void getMinMax()
     {
-        //Lesson 4 Homework 2
+
         Console.WriteLine("\n\nLesson 4 Homework 2\n");
         Console.Write("Number N1 - ");
         decimal number1 = decimal.Parse(Console.ReadLine());
