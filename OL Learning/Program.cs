@@ -2,7 +2,7 @@
 
 class LessonFive
 {
-    static void Main(string[] args) // შესვლის წერტილის მეთოდი, მხოლოდ ერთი
+    static void Main(string[] args)
     {
         int logNumber = 1;
         while (logNumber <= 3) 
