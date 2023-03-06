@@ -4,35 +4,30 @@ class LessonFive
 {
     static void Main(string[] args)
     {
-        int logNumber = 1;
-        while (logNumber <= 3) 
-        { 
-            logNumber++;
-            startGame();
+        startGame();
 
-        }
-        static void startGame()
+    }
+
+    static void startGame()
     {
-       
-            welcomingMessage();
+        welcomingMessage(); 
           
             int randomNumber = getRandomNumber();
 
-            int usersNumber = enterNumber();
+            int usersNumber;
 
-            if (randomNumber == usersNumber)
+        for(int counter=1; counter <= 3; counter++)
+        {
+            usersNumber = enterNumber();
+            if(checkGame(usersNumber,randomNumber,counter))
             {
-                Console.WriteLine("You have WON!");
+                return;
             }
-            else if (randomNumber > usersNumber)
-            {
-                Console.WriteLine("Your number is lower than random number.");
-            }
-            else if (randomNumber < usersNumber)
-            {
-                Console.WriteLine("Your number is higher than random number.");
-            }
-        } }
+            Console.WriteLine("You Have Lost!");
+            
+        }
+        newGame();
+    }
 
     static void welcomingMessage()
     {
@@ -53,4 +48,43 @@ class LessonFive
 
         return Int32.Parse(Console.ReadLine());
     }
+
+    static bool checkGame(int userNumber, int randomNumber, int counter)
+    {
+         if (randomNumber == userNumber)
+    {
+            Console.WriteLine("You have won!");
+            newGame();
+            return true;
+         }
+            else if (randomNumber > userNumber && counter != 3)
+         {
+                Console.WriteLine("Your number is lower than random number.");
+         }
+            else if (randomNumber < userNumber && counter != 3)
+        {
+             Console.WriteLine("Your number is higher than random number");
+        }
+         return false;
+    }
+
+    static void newGame()
+    {
+        Console.WriteLine();
+        string playAgain = "yes";
+        Console.WriteLine("Play again (yes / no)?");
+        string enteredAnswer = Console.ReadLine();
+
+        if (enteredAnswer == playAgain)
+        {
+                startGame();
+                return;
+        }
+        else
+        {
+                 Console.WriteLine("Thanks for game");
+        }
+
+    }
+
 }
