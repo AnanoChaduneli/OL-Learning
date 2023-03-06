@@ -82,7 +82,7 @@ class LessonFive
         }
         else
         {
-                 Console.WriteLine("Thanks for game");
+                 Console.WriteLine("Game Over");
         }
 
     }
